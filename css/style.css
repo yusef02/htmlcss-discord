@@ -1,0 +1,179 @@
+/* ### RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ### UTILS */
+
+.container {
+  max-width: 1080px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+/* ### PAGE */
+
+/* ## HEADER */
+
+.header {
+  height: 80px;
+
+  /* debug */
+  background-color: #add8e6;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header > .container > * {
+  flex-basis: 200px;
+  padding: 10px;
+
+  /* debug */
+  background-color: #d9a41f;
+  border: 2px dashed black;
+}
+
+.header > .container > .header__nav {
+  flex-grow: 1;
+}
+
+/* ## JUMBOTRON */
+
+.jumbotron {
+  padding: 3rem 0;
+
+  /* debug */
+  background-color: #00008b;
+}
+
+.jumbotron .jumbotron__content {
+  width: 800px;
+  margin: 0 auto;
+
+  /* debug */
+  background-color: #ee82ee;
+  border: 2px dashed black;
+  height: 400px;
+}
+
+/* ## ROWS SECTION */
+
+main > section {
+  padding: 3rem 0;
+}
+
+main > section:nth-of-type(odd) {
+  background-color: white;
+}
+
+main > section:nth-of-type(even) {
+  background-color: #d3d3d3;
+}
+
+main > section > .container {
+  display: flex;
+}
+
+main > section:nth-of-type(even) > .container {
+  flex-direction: row-reverse;
+}
+
+main > section .col-big,
+main > section .col-small {
+  /* debug */
+  height: 400px;
+  border: 2px dashed black;
+}
+
+main > section .col-big {
+  flex-basis: 60%;
+
+  /* debug */
+  background-color: #1e90ff;
+}
+
+main > section .col-small {
+  flex-basis: 40%;
+
+  /* debug */
+  background-color: #ffc0cb;
+}
+
+main > .download > .container {
+  display: block;
+}
+
+main > .download .col {
+  /* debug */
+  height: 800px;
+  background-color: #228b22;
+  border: 2px dashed black;
+}
+
+/* ## FOOTER */
+
+.footer {
+  background-color: #23272a;
+  padding-top: 10px;
+}
+
+.footer .upper-footer {
+  display: flex;
+
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 2rem;
+}
+
+.footer .upper-footer > .col-small {
+  width: 30%;
+
+  /* debug */
+  height: 500px;
+  background-color: #f08080;
+  border: 2px dashed black;
+}
+
+.footer .upper-footer > .col-big {
+  width: 70%;
+  display: flex;
+
+  /* debug */
+  height: 500px;
+  background-color: #20b2aa;
+  border: 2px dashed black;
+}
+
+.footer .col-big > .w-25 {
+  border: 2px dashed white;
+}
+
+.footer .bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* debug */
+  height: 100px;
+  background-color: #7fffd4;
+}
+
+.bottom-footer > .logo,
+.bottom-footer > .button {
+  padding: 5px 10px;
+
+  /* debug */
+  background-color: #fdb5bf;
+  border: 2px dashed black;
+}
