@@ -8,9 +8,9 @@
 }
 
 /* debug */
-* {
+/* m* {
   font-size: 18px;
-}
+} */
 
 /* ### UTILS */
 
@@ -18,6 +18,22 @@
   max-width: 1080px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.btn-white {
+  display: inline-block;
+  background-color: white;
+  color: #23272a;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.btn-dark {
+  display: inline-block;
+  background-color: #23272a;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .w-25 {
@@ -30,7 +46,7 @@
 
 .header {
   height: 80px;
-  background-color: #3161e0;
+  background-color: #255ee9;
 
   /* debug */
   /* background-color: #add8e6; */
@@ -71,29 +87,35 @@
   color: white;
 }
 
-.header .header__login {
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-}
-
 /* ## JUMBOTRON */
 
 .jumbotron {
   padding: 3rem 0;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
 
   /* debug */
-  background-color: #00008b;
+  /* background-color: #00008b; */
 }
 
 .jumbotron .jumbotron__content {
-  width: 800px;
   margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  color: white;
+  text-align: center;
 
   /* debug */
-  background-color: #ee82ee;
+  /* background-color: #ee82ee;
   border: 2px dashed black;
-  height: 400px;
+  height: 400px; */
+}
+
+.jumbotron .jumbotron__content > * {
+  margin-top: 1.7rem;
+}
+.jumbotron .jumbotron__content > .btn-white + .btn-dark {
+  margin-left: 2rem;
 }
 
 /* ## ROWS SECTION */
