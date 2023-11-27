@@ -4,6 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* debug */
+* {
+  font-size: 18px;
 }
 
 /* ### UTILS */
@@ -24,28 +30,51 @@
 
 .header {
   height: 80px;
+  background-color: #3161e0;
 
   /* debug */
-  background-color: #add8e6;
+  /* background-color: #add8e6; */
 }
 
 .header > .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
 
 .header > .container > * {
-  flex-basis: 200px;
   padding: 10px;
 
   /* debug */
-  background-color: #d9a41f;
-  border: 2px dashed black;
+  /* flex-basis: 200px; */
+  /* background-color: #d9a41f; */
+  /* border: 2px dashed black; */
 }
 
 .header > .container > .header__nav {
   flex-grow: 1;
+}
+
+.header .header__nav > ul {
+  list-style: none;
+  text-align: center;
+}
+
+.header .header__nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.header .header__nav li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .header__login {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 /* ## JUMBOTRON */
