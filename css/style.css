@@ -57,6 +57,10 @@ h2 {
   margin-bottom: 30px;
 }
 
+.wrapper {
+  font-size: 0;
+}
+
 /* ### PAGE */
 
 /* ## HEADER */
@@ -208,6 +212,17 @@ main > .download .col > h3 {
   background-image: url(../img/stars.svg);
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+/* wave style */
+
+main .wave-180 {
+  transform: rotate(180deg);
+}
+
+main .wave,
+main .wave-180 {
+  color: #f6f6f6;
 }
 
 /* ## FOOTER */
